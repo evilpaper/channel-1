@@ -1,5 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Clock() {
-  return <h1>I'm a clock</h1>;
+  const [time, setTime] = useState(new Date().toLocaleTimeString());
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setTime(new Date().toLocaleTimeString());
+    }, 1000);
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [time]);
+
+  const today = new Date();
+  const date = `${today.getFullYear()} ${
+    today.getMonth() + 1
+  } ${today.getDate()}`;
+  return (
+    <>
+      <h1>{date}</h1>
+      <h1>{time}</h1>
+    </>
+  );
 }
