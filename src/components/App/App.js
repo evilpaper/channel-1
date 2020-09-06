@@ -4,7 +4,10 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="grid">
+      <Clock></Clock>
+      <Clock></Clock>
+      <Clock></Clock>
       <Clock></Clock>
     </div>
   );

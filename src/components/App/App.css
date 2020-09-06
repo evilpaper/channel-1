@@ -1,1 +1,12 @@
 @import "../Card/styles.css";
+@import "../Clock/styles.css";
+@import "../Heading/styles.css";
+
+body {
+  padding: 3em;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+}
