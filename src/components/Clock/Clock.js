@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Card from "../Card/Card.js";
 
 export default function Clock() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
@@ -13,13 +14,15 @@ export default function Clock() {
   }, [time]);
 
   const today = new Date();
-  const date = `${today.getFullYear()} ${
+  const date = `${today.getFullYear()}${
     today.getMonth() + 1
-  } ${today.getDate()}`;
+  }${today.getDate()}`;
   return (
     <>
-      <h1>{date}</h1>
-      <h1>{time}</h1>
+      <Card>
+        <h1>{date}</h1>
+        <h1>{time}</h1>
+      </Card>
     </>
   );
 }

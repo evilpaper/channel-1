@@ -5,7 +5,6 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <h1>Welcome to Channel 1</h1>
       <Clock></Clock>
     </div>
   );
