@@ -14,16 +14,34 @@ export default function Clock() {
     };
   }, [time]);
 
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
   const today = new Date();
-  const date = `${today.getFullYear()}/${
-    today.getMonth() + 1
-  }/${today.getDate()}`;
+  const day = today.getDate();
+  const month = today.getMonth();
+  const year = today.getFullYear();
+  const date = `${day} ${months[month - 1]} ${year}`;
   return (
     <>
       <Card>
         <Heading title="Time"></Heading>
-        <p>{date}</p>
-        <p>{time}</p>
+        <div className="clock-container">
+          <p className="clock-time">{time}</p>
+          <p className="clock-date">{date}</p>
+        </div>
       </Card>
     </>
   );
