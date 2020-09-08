@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Card from "../Card/Card.js";
-import Heading from "../Heading/Heading.js";
 
 export default function Clock() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
@@ -13,6 +12,16 @@ export default function Clock() {
       clearTimeout(timeout);
     };
   }, [time]);
+
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
 
   const months = [
     "January",
@@ -31,15 +40,16 @@ export default function Clock() {
 
   const today = new Date();
   const day = today.getDate();
+  const weekDay = days[today.getDay()];
   const month = today.getMonth();
   const year = today.getFullYear();
   const date = `${day} ${months[month - 1]} ${year}`;
   return (
     <>
       <Card>
-        <Heading title="Time"></Heading>
         <div className="clock-container">
           <p className="clock-time">{time}</p>
+          <p className="clock-date">{weekDay}</p>
           <p className="clock-date">{date}</p>
         </div>
       </Card>

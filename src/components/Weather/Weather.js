@@ -3,7 +3,8 @@ import Card from "../Card/Card.js";
 import Heading from "../Heading/Heading.js";
 
 export default function Weather(props) {
-  const [weather, setWeather] = useState();
+  const [weather, setWeather] = useState("");
+  const [temperature, setTemperature] = useState("");
 
   useEffect(() => {
     fetch(
@@ -11,15 +12,16 @@ export default function Weather(props) {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.weather[0].description);
         setWeather(data.weather[0].description);
+        setTemperature(data.main.temp);
       });
   }, []);
 
   return (
     <Card>
-      <Heading title="Weather"></Heading>
+      <Heading title="Weather" />
       <p>{weather}</p>
+      <p>Temperature: {temperature}°C</p>
     </Card>
   );
 }
