@@ -10,4 +10,5 @@ body {
 
 .grid {
   display: flex;
+  align-content: flex-start;
 }

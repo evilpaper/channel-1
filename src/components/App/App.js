@@ -6,8 +6,8 @@ import "./App.css";
 function App() {
   return (
     <div className="grid">
-      <Clock></Clock>
-      <Weather></Weather>
+      <Clock />
+      <Weather />
     </div>
   );
 }

@@ -1,7 +1,19 @@
 .weather-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+  display: flex;
+}
+
+.weather-temperature {
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+
+.weather-icon-and-description {
+  padding-left: 1em;
+}
+
+.weather-description {
+  margin-top: 0;
+  margin-bottom: 0;
+}

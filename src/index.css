@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --color-darkest-night: hsl(220, 75%, 10%);
   --color-gray-5: hsl(220, 16%, 20%);

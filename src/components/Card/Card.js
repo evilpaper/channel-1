@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Card(props) {
-  return <section className="card">{props.children}</section>;
+  return <div className="card">{props.children}</div>;
 }

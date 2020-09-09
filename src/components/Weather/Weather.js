@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Card from "../Card/Card.js";
-import Heading from "../Heading/Heading.js";
 
 import Cloud from "../../images/cloud.svg";
 import Hail from "../../images/hail.svg";
@@ -26,9 +25,12 @@ export default function Weather() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        setWeatherDescription(data.weather[0].description);
+        setWeatherDescription(
+          data.weather[0].description.substr(0, 1).toUpperCase() +
+            data.weather[0].description.substr(1)
+        );
         setweatherIcon(data.weather[0].icon);
-        setTemperature(data.main.temp);
+        setTemperature(Math.round(data.main.temp));
       });
   }, []);
 
@@ -79,10 +81,11 @@ export default function Weather() {
   return (
     <Card>
       <div className="weather-container">
-        <Heading title="Weather" />
-        <WeatherIcon src={icon()} alt="Hail" />
-        <p>{weatherDescription}</p>
-        <p>Temperature: {temperature}°C</p>
+        <p className="weather-temperature">{temperature}°C</p>
+        <div className="weather-icon-and-description">
+          <WeatherIcon src={icon()} alt="Hail" />
+          <p className="weather-description">{weatherDescription}</p>
+        </div>
       </div>
     </Card>
   );

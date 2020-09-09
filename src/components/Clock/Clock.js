@@ -42,17 +42,15 @@ export default function Clock() {
   const day = today.getDate();
   const weekDay = days[today.getDay()];
   const month = today.getMonth();
-  const year = today.getFullYear();
-  const date = `${day} ${months[month - 1]} ${year}`;
+  const date = `${months[month - 1]} ${day}`;
   return (
-    <>
-      <Card>
-        <div className="clock-container">
-          <p className="clock-time">{time}</p>
-          <p className="clock-date">{weekDay}</p>
-          <p className="clock-date">{date}</p>
-        </div>
-      </Card>
-    </>
+    <Card>
+      <div className="clock-container">
+        <p className="clock-time">{time}</p>
+        <p className="clock-date">
+          {weekDay}, {date}
+        </p>
+      </div>
+    </Card>
   );
 }
