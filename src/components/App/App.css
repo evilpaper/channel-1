@@ -1,6 +1,8 @@
 @import "../Card/styles.css";
 @import "../Clock/styles.css";
 @import "../Heading/styles.css";
+@import "../Weather/styles.css";
+@import "../WeatherIcon/styles.css";
 
 body {
   padding: 3em;
@@ -8,5 +10,4 @@ body {
 
 .grid {
   display: flex;
-  justify-content: space-around;
 }

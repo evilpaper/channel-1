@@ -1,6 +1,11 @@
 :root {
-  --color-black: hsl(220, 75%, 10%);
-  --color-light-gray: hsl(220, 16%, 89%);
+  --color-darkest-night: hsl(220, 75%, 10%);
+  --color-gray-5: hsl(220, 16%, 20%);
+  --color-gray-4: hsl(220, 16%, 34%);
+  --color-gray-3: hsl(220, 16%, 60%);
+  --color-gray-2: hsl(220, 16%, 80%);
+  --color-gray-1: hsl(220, 16%, 89%);
+  --color-lightest-day: hsl(220, 16%, 96%);
 }
 
 body {
@@ -10,5 +15,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-light-gray);
+  background-color: var(--color-gray-1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

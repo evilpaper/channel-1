@@ -12,3 +12,7 @@
   margin-bottom: 0.2em;
   margin-top: 0.2em;
 }
+
+.clock-date {
+  color: var(--color-gray-4);
+}
