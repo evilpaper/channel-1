@@ -8,6 +8,14 @@ function App() {
     <div className="grid">
       <Clock />
       <Weather />
+      <Weather />
+      <Weather />
+      <Clock />
+      <Weather />
+      <Weather />
+      <Clock />
+      <Weather />
+      <Weather />
     </div>
   );
 }

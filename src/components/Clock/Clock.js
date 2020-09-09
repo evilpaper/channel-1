@@ -43,14 +43,13 @@ export default function Clock() {
   const weekDay = days[today.getDay()];
   const month = today.getMonth();
   const date = `${months[month - 1]} ${day}`;
+
   return (
     <Card>
-      <div className="clock-container">
-        <p className="clock-time">{time}</p>
-        <p className="clock-date">
-          {weekDay}, {date}
-        </p>
-      </div>
+      <p className="clock-time">{time}</p>
+      <p className="clock-date">
+        {weekDay}, {date}
+      </p>
     </Card>
   );
 }

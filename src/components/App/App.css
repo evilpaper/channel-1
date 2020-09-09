@@ -10,5 +10,8 @@ body {
 
 .grid {
   display: flex;
-  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 100vh;
 }
