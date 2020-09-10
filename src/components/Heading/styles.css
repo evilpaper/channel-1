@@ -1,5 +1,6 @@
 .heading {
   margin-top: 0;
-  font-size: 1em;
-  color: var(color-gray-5);
+  padding-bottom: 0.4em;
+  font-size: 1.2em;
+  color: var(--color-gray-5);
 }

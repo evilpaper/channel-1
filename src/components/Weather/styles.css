@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.weather-right-part {
+  padding-right: 2em;
+}
+
 .weather-temperature {
   font-weight: 700;
   font-size: 2em;
@@ -9,12 +13,12 @@
   margin-top: 0.2em;
 }
 
-.weather-icon-and-description {
-  padding-left: 1em;
+.weather-description {
+  margin-bottom: 0.4em;
+  color: var(--color-gray-4);
 }
 
-.weather-description {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: var(--color-gray-4);
+.weather-location {
+  margin-top: 0em;
+  color: var(--color-gray-3);
 }

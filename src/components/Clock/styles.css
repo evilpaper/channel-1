@@ -2,9 +2,13 @@
   font-weight: 700;
   font-size: 2em;
   margin-bottom: 0.2em;
-  margin-top: 0.2em;
+  margin-top: 0;
+  padding: 0;
+  color: var(--color-gray-5);
 }
 
 .clock-date {
-  color: var(--color-gray-4);
+  margin-top: 0.4em;
+  margin-bottom: 0;
+  color: var(--color-gray-3);
 }
