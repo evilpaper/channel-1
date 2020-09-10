@@ -15,8 +15,9 @@ import WeatherIcon from "../WeatherIcon/WeatherIcon.js";
 
 export default function Weather() {
   const [weatherDescription, setWeatherDescription] = useState("");
-  const [temperature, setTemperature] = useState("");
   const [weatherIcon, setweatherIcon] = useState("");
+  const [temperature, setTemperature] = useState("");
+  const [location, setLocation] = useState("");
 
   useEffect(() => {
     fetch(
@@ -31,6 +32,7 @@ export default function Weather() {
         );
         setweatherIcon(data.weather[0].icon);
         setTemperature(Math.round(data.main.temp));
+        setLocation(data.name);
       });
   }, []);
 
@@ -83,6 +85,7 @@ export default function Weather() {
       <p className="weather-temperature">{temperature}°C</p>
       <WeatherIcon src={icon()} alt="Hail" />
       <p className="weather-description">{weatherDescription}</p>
+      <p className="weather-description">{location}</p>
     </Card>
   );
 }

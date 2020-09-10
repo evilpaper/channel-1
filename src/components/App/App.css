@@ -3,15 +3,8 @@
 @import "../Heading/styles.css";
 @import "../Weather/styles.css";
 @import "../WeatherIcon/styles.css";
+@import "../InputField/styles.css";
 
 body {
   padding: 3em;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 1rem;
-  max-height: 100vh;
 }

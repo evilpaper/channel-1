@@ -1,21 +1,16 @@
 import React from "react";
+import "./App.css";
+
 import Clock from "../Clock/Clock.js";
 import Weather from "../Weather/Weather.js";
-import "./App.css";
+import DailyInfo from "../DailyInfo/DailyInfo.js";
 
 function App() {
   return (
     <div className="grid">
       <Clock />
       <Weather />
-      <Weather />
-      <Weather />
-      <Clock />
-      <Weather />
-      <Weather />
-      <Clock />
-      <Weather />
-      <Weather />
+      <DailyInfo />
     </div>
   );
 }

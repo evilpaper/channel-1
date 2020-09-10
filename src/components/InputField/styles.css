@@ -1,0 +1,26 @@
+input {
+  box-sizing: border-box;
+  height: 4em;
+  width: 100%;
+  vertical-align: middle;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 0.5em;
+  outline: 0;
+  border: 2px solid gainsboro;
+}
+
+input::placeholder {
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  color: darkgrey;
+}
+
+input:hover {
+  border: 2px solid darkgrey;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1fb6ff;
+}
