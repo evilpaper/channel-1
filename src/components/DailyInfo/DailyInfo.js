@@ -16,26 +16,35 @@ export default function DailyInfo() {
       newItems.push(e.target.value);
       setItems(newItems);
       setInput("");
-      console.log(items);
     }
+  };
+
+  const handleDelete = (index) => {
+    const itemToDelete = items[index];
+    const newItems = items.filter((item) => item !== itemToDelete);
+    setItems(newItems);
   };
 
   return (
     <Card>
       <div className="daily-info-container">
         <Heading title="Todays information"></Heading>
-
-        <ul className="daily-info-list">
-          {items.map((item, index) => {
-            return <li key={index}>{item}</li>;
-          })}
-        </ul>
         <InputField
           handleChange={handleChange}
           handleSubmit={handleSubmit}
           value={input}
-          placeholder="Add your infomration"
+          placeholder="Add information..."
         />
+        <ul className="daily-info-list">
+          {items.map((item, index) => {
+            return (
+              <li key={index}>
+                {item}{" "}
+                <button onClick={() => handleDelete(index)}>Delete</button>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </Card>
   );

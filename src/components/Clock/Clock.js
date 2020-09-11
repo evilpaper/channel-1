@@ -46,10 +46,12 @@ export default function Clock() {
 
   return (
     <Card>
-      <p className="clock-time">{time}</p>
-      <p className="clock-date">
-        {weekDay}, {date}
-      </p>
+      <div className="clock-container">
+        <p className="clock-time">{time}</p>
+        <p className="clock-date">
+          {weekDay}, {date}
+        </p>
+      </div>
     </Card>
   );
 }

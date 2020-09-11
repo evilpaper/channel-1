@@ -1,3 +1,7 @@
+.clock-container {
+  min-width: 10em;
+}
+
 .clock-time {
   font-weight: 700;
   font-size: 2em;
