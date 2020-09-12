@@ -1,7 +1,7 @@
 .heading {
   font-weight: 700;
   margin-top: 0;
-  padding-bottom: 0.4em;
-  font-size: 1.2em;
+  padding-bottom: 1em;
+  font-size: 1em;
   color: var(--color-gray-5);
 }

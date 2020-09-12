@@ -4,7 +4,7 @@ import Heading from "../Heading/Heading.js";
 import InputField from "../InputField/InputField.js";
 import List from "../List/List.js";
 
-export default function DailyInfo() {
+export default function SickLeave() {
   const [input, setInput] = useState("");
   const [items, setItems] = useState([]);
 
@@ -28,16 +28,14 @@ export default function DailyInfo() {
 
   return (
     <Card>
-      <div className="daily-info-container">
-        <Heading title="Todays information"></Heading>
-        <InputField
-          handleChange={handleChange}
-          handleSubmit={handleSubmit}
-          value={input}
-          placeholder="Add information..."
-        />
-        <List items={items} handleDelete={handleDelete} />
-      </div>
+      <Heading title="Sick Leave"></Heading>
+      <InputField
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+        value={input}
+        placeholder="Add information..."
+      />
+      <List items={items} handleDelete={handleDelete} />
     </Card>
   );
 }
