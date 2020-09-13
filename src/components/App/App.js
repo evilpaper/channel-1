@@ -6,15 +6,29 @@ import Weather from "../Weather/Weather.js";
 import DailyInfo from "../DailyInfo/DailyInfo.js";
 import SickLeave from "../SickLeave/SickLeave.js";
 import DailyBest from "../DailyBest/DailyBest.js";
+import DailyWorst from "../DailyWorst/DailyWorst.js";
 
 function App() {
   return (
     <div className="grid">
-      <Clock />
-      <Weather />
-      <DailyInfo />
-      <SickLeave />
-      <DailyBest />
+      <div className="grid-column">
+        <Clock />
+        <Weather />
+        <DailyBest />
+      </div>
+      <div className="grid-column">
+        <DailyInfo />
+        <SickLeave />
+        <DailyWorst />
+      </div>
+      <div className="grid-column">
+        <DailyInfo />
+        <SickLeave />
+      </div>
+      <div className="grid-column">
+        <DailyInfo />
+        <SickLeave />
+      </div>
     </div>
   );
 }
