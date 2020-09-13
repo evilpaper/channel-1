@@ -34,7 +34,7 @@ export default function DailyInfo() {
           handleChange={handleChange}
           handleSubmit={handleSubmit}
           value={input}
-          placeholder="Add information..."
+          placeholder=" + add information..."
         />
         <List items={items} handleDelete={handleDelete} />
       </div>

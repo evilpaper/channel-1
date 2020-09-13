@@ -46,13 +46,18 @@ select {
 }
 
 :root {
-  --color-darkest-night: hsl(220, 75%, 10%);
-  --color-gray-5: hsl(220, 16%, 20%);
-  --color-gray-4: hsl(220, 16%, 34%);
-  --color-gray-3: hsl(220, 16%, 60%);
-  --color-gray-2: hsl(220, 16%, 80%);
-  --color-gray-1: hsl(220, 16%, 89%);
-  --color-lightest-day: hsl(220, 16%, 96%);
+  --color-darkest-night: hsl(227, 75%, 10%);
+  --color-main-5: hsl(227, 60%, 20%);
+  --color-main-4: hsl(227, 30%, 34%);
+  --color-main-3: hsl(227, 30%, 60%);
+  --color-main-2: hsl(227, 30%, 80%);
+  --color-main-1: hsl(227, 30%, 89%);
+  --color-lightest-day: hsl(227, 60%, 96%);
+  --color-background: hsl(222, 50%, 96%);
+  --color-heading: hsl(227, 35%, 16%);
+  --color-subheading: hsl(225, 14%, 57%);
+  --color-border-hover: hsl(222, 50%, 80%);
+  --color-placeholder: hsl(227, 50%, 66%);
 }
 
 body {
@@ -62,7 +67,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-gray-1);
+  background-color: var(--color-background);
   padding: 3em;
 }
 

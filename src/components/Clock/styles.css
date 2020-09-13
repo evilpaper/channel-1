@@ -8,11 +8,11 @@
   margin-bottom: 0.2em;
   margin-top: 0;
   padding: 0;
-  color: var(--color-gray-5);
+  color: var(--color-heading);
 }
 
 .clock-date {
   margin-top: 0.4em;
   margin-bottom: 0;
-  color: var(--color-gray-3);
+  color: var(--color-subheading);
 }

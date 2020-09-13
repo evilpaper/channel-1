@@ -14,10 +14,10 @@
 
 .weather-description {
   margin-bottom: 0.4em;
-  color: var(--color-gray-4);
+  color: var(--color-subheading);
 }
 
 .weather-location {
   margin-top: 0em;
-  color: var(--color-gray-3);
+  color: var(--color-subheading);
 }

@@ -7,9 +7,11 @@ export default function DailyBest() {
   return (
     <Card>
       <Heading title="Daily Best"></Heading>
-      <div className="daily-best-image">
-        <img src={DailyBestImage} alt="Today's best" />
-      </div>
+      <img
+        className="daily-best-image"
+        src={DailyBestImage}
+        alt="Today's best"
+      />
     </Card>
   );
 }
