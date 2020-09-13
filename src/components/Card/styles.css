@@ -2,8 +2,8 @@
   padding: 1.2em 1.2em;
   background-color: #fff;
   border-radius: 0.7em;
-  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2);
-  /* display: inline-block;
-  vertical-align: top;
-  margin: 1em; */
+  box-shadow: 0 1px 2.2px hsla(227, 35%, 6%, 0.06),
+    0 3px 6px hsla(227, 35%, 6%, 0.06), 0 4px 10px hsla(227, 35%, 6%, 0.06),
+    0 8px 18px hsla(227, 35%, 6%, 0.06), 0 16px 32px hsla(227, 35%, 6%, 0.06),
+    0 36px 80px hsla(227, 35%, 6%, 0.06);
 }

@@ -29,7 +29,7 @@ export default function SickLeave() {
   return (
     <Card>
       <div className="sick-leave-container">
-        <Heading title="Sick Leave"></Heading>
+        <Heading title="Todays sick leave"></Heading>
         <List items={items} handleDelete={handleDelete} />
       </div>
       <InputField

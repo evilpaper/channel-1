@@ -6,7 +6,7 @@ import DailyWorstImage from "../../images/mick-haupt-iXhbgXrUDSU-unsplash.jpg";
 export default function DailyBest() {
   return (
     <Card>
-      <Heading title="Daily Worst"></Heading>
+      <Heading title="Todays Worst"></Heading>
       <img
         className="daily-worst-image"
         src={DailyWorstImage}
