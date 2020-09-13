@@ -28,14 +28,16 @@ export default function SickLeave() {
 
   return (
     <Card>
-      <Heading title="Sick Leave"></Heading>
+      <div className="sick-leave-container">
+        <Heading title="Sick Leave"></Heading>
+        <List items={items} handleDelete={handleDelete} />
+      </div>
       <InputField
         handleChange={handleChange}
         handleSubmit={handleSubmit}
         value={input}
         placeholder=" + add person..."
       />
-      <List items={items} handleDelete={handleDelete} />
     </Card>
   );
 }

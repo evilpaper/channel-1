@@ -14,21 +14,21 @@ function App() {
     <div className="grid">
       <div className="grid-column">
         <Clock />
-        <Weather />
         <DailyBest />
-      </div>
-      <div className="grid-column">
-        <DailyInfo />
-        <SickLeave />
         <DailyWorst />
       </div>
       <div className="grid-column">
+        <Weather />
         <DailyInfo />
+        <SickLeave />
+      </div>
+      <div className="grid-column">
+        <Weather />
         <DailyActions />
       </div>
       <div className="grid-column">
-        <DailyInfo />
-        <SickLeave />
+        <Weather />
+        <DailyActions />
       </div>
     </div>
   );

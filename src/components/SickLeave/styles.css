@@ -1,0 +1,6 @@
+.sick-leave-container {
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

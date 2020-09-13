@@ -29,14 +29,16 @@ export default function DailyInfo() {
   return (
     <Card>
       <div className="daily-info-container">
-        <Heading title="Todays information"></Heading>
+        <div>
+          <Heading title="Todays information"></Heading>
+          <List items={items} handleDelete={handleDelete} />
+        </div>
         <InputField
           handleChange={handleChange}
           handleSubmit={handleSubmit}
           value={input}
           placeholder=" + add information..."
         />
-        <List items={items} handleDelete={handleDelete} />
       </div>
     </Card>
   );

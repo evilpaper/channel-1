@@ -28,14 +28,18 @@ export default function DailyActions() {
 
   return (
     <Card>
-      <Heading title="Today's actions"></Heading>
-      <List items={items} handleDelete={handleDelete} />
-      <InputField
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-        value={input}
-        placeholder=" + add action..."
-      />
+      <div className="daily-action-container">
+        <div>
+          <Heading title="Today's actions"></Heading>
+          <List items={items} handleDelete={handleDelete} />
+        </div>
+        <InputField
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+          value={input}
+          placeholder=" + add action..."
+        />
+      </div>
     </Card>
   );
 }

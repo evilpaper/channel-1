@@ -6,6 +6,9 @@
 @import "../InputField/styles.css";
 @import "../DailyBest/styles.css";
 @import "../DailyWorst/styles.css";
+@import "../DailyActions/styles.css";
+@import "../DailyInfo/styles.css";
+@import "../SickLeave/styles.css";
 
 .grid {
   display: flex;
