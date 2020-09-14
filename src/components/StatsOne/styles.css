@@ -1,0 +1,21 @@
+.stats-kpi-value {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.stats-kpi-unit {
+  font-size: 0.8em;
+  color: var(--color-subheading);
+}
+
+.stats-diagram {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.stats-diagram-bar {
+  height: 3em;
+  width: 0.8em;
+  background-color: dodgerblue;
+  border-radius: 8px;
+}

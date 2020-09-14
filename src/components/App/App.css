@@ -9,6 +9,7 @@
 @import "../DailyActions/styles.css";
 @import "../DailyInfo/styles.css";
 @import "../SickLeave/styles.css";
+@import "../StatsOne/styles.css";
 
 .grid {
   display: flex;

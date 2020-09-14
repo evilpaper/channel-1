@@ -8,6 +8,7 @@ import DailyActions from "../DailyActions/DailyActions.js";
 import SickLeave from "../SickLeave/SickLeave.js";
 import DailyBest from "../DailyBest/DailyBest.js";
 import DailyWorst from "../DailyWorst/DailyWorst.js";
+import StatsOne from "../StatsOne/StatsOne.js";
 
 function App() {
   return (
@@ -16,18 +17,17 @@ function App() {
         <Clock />
         <DailyBest />
         <DailyWorst />
+        <Weather />
       </div>
       <div className="grid-column">
-        <Weather />
         <DailyInfo />
         <SickLeave />
       </div>
       <div className="grid-column">
-        <Weather />
+        <StatsOne />
         <DailyActions />
       </div>
       <div className="grid-column">
-        <Weather />
         <DailyActions />
       </div>
     </div>
