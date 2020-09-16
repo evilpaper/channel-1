@@ -83,12 +83,13 @@ export default function Weather() {
   return (
     <Card>
       <div className="weather-container">
-        <div className="weather-right-part">
+        <WeatherIcon src={icon()} alt="weather-icon" />
+        <div>
+          <p className="weather-description">
+            {weatherDescription} in {location}
+          </p>
           <p className="weather-temperature">{temperature}°C</p>
-          <p className="weather-description">{weatherDescription}</p>
-          <p className="weather-location">{location}</p>
         </div>
-        <WeatherIcon src={icon()} alt="Hail" />
       </div>
     </Card>
   );

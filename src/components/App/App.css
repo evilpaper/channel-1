@@ -10,6 +10,7 @@
 @import "../DailyInfo/styles.css";
 @import "../SickLeave/styles.css";
 @import "../StatsOne/styles.css";
+@import "../List/styles.css";
 
 .grid {
   display: flex;

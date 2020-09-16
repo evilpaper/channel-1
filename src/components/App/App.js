@@ -15,17 +15,16 @@ function App() {
     <div className="grid">
       <div className="grid-column">
         <Clock />
-        <DailyBest />
-        <DailyWorst />
         <Weather />
       </div>
       <div className="grid-column">
-        <DailyInfo />
-        <SickLeave />
+        <DailyBest />
+        <DailyWorst />
       </div>
       <div className="grid-column">
         <StatsOne />
-        <DailyActions />
+        <DailyInfo />
+        <SickLeave />
       </div>
       <div className="grid-column">
         <DailyActions />

@@ -1,0 +1,10 @@
+.list-item-delete-button {
+  float: right;
+  border: none;
+  background-color: transparent;
+  color: coral;
+}
+
+.list-item-delete-button-icon {
+  width: 1.2em;
+}

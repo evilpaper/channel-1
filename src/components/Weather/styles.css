@@ -1,15 +1,11 @@
 .weather-container {
   display: flex;
-}
-
-.weather-right-part {
-  padding-right: 2em;
+  align-items: center;
 }
 
 .weather-temperature {
   font-weight: 700;
   font-size: 2em;
-  margin-bottom: 0.2em;
 }
 
 .weather-description {
