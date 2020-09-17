@@ -3,4 +3,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+}
+
+.daily-action-list-container {
+  overflow: hidden;
+}
+
+.daily-action-input {
+  position: absolute;
+  bottom: 1em;
 }

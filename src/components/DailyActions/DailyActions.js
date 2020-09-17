@@ -31,7 +31,9 @@ export default function DailyActions() {
       <div className="daily-action-container">
         <div>
           <Heading title="Today's actions"></Heading>
-          <List items={items} handleDelete={handleDelete} />
+          <div className="daily-action-list-container">
+            <List items={items} handleDelete={handleDelete} />
+          </div>
         </div>
         <InputField
           handleChange={handleChange}

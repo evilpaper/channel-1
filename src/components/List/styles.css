@@ -1,3 +1,8 @@
+.list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .list-item-delete-button {
   float: right;
   border: none;

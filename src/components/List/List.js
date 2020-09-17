@@ -3,7 +3,7 @@ import { XCircle } from "react-feather";
 
 export default function List({ items, handleDelete }) {
   return (
-    <ul className="daily-info-list">
+    <ul className="list">
       {items.map((item, index) => {
         return (
           <li key={index} className="list-item">
