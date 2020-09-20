@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Card from "../Card/Card.js";
+import styled from "styled-components";
 
 export default function Clock() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
@@ -44,14 +44,20 @@ export default function Clock() {
   const month = today.getMonth();
   const date = `${months[month - 1]} ${day}`;
 
+  const P1 = styled.p`
+    color: coral;
+  `;
+
+  const P2 = styled.p`
+    color: dodgerblue;
+  `;
+
   return (
-    <Card>
-      <div className="clock-container">
-        <p className="clock-time">{time}</p>
-        <p className="clock-date">
-          {weekDay}, {date}
-        </p>
-      </div>
-    </Card>
+    <div className="clock-container">
+      <P1>{time}</P1>
+      <P2>
+        {weekDay}, {date}
+      </P2>
+    </div>
   );
 }

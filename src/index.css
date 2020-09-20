@@ -50,9 +50,9 @@ select {
 }
 
 :root {
-  --color-background: hsl(222, 50%, 96%);
-  --color-heading: hsl(227, 35%, 16%);
-  --color-subheading: hsl(225, 14%, 57%);
+  --color-background: hsl(232, 67%, 96%);
+  --color-heading: hsl(232, 33%, 4%);
+  --color-subheading: hsla(232, 33%, 4%, 0.5);
   --color-border-hover: hsl(222, 50%, 80%);
   --color-placeholder: hsl(227, 56%, 60%);
 }
