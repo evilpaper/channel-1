@@ -45,15 +45,16 @@ export default function Clock() {
   const date = `${months[month - 1]} ${day}`;
 
   const P1 = styled.p`
-    color: coral;
+    color: var(--color-heading);
+    font-weight: 700;
   `;
 
   const P2 = styled.p`
-    color: dodgerblue;
+    color: var(--color-subheading);
   `;
 
   return (
-    <div className="clock-container">
+    <div>
       <P1>{time}</P1>
       <P2>
         {weekDay}, {date}

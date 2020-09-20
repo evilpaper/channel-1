@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Card from "../Card/Card.js";
+import styled from "styled-components";
 
 import Cloud from "../../images/cloud.svg";
 import Hail from "../../images/hail.svg";
@@ -17,7 +17,6 @@ export default function Weather() {
   const [weatherDescription, setWeatherDescription] = useState("");
   const [weatherIcon, setweatherIcon] = useState("");
   const [temperature, setTemperature] = useState("");
-  const [location, setLocation] = useState("");
 
   useEffect(() => {
     fetch(
@@ -25,14 +24,12 @@ export default function Weather() {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setWeatherDescription(
           data.weather[0].description.substr(0, 1).toUpperCase() +
             data.weather[0].description.substr(1)
         );
         setweatherIcon(data.weather[0].icon);
         setTemperature(Math.round(data.main.temp));
-        setLocation(data.name);
       });
   }, []);
 
@@ -80,17 +77,27 @@ export default function Weather() {
     }
   };
 
+  const WeatherWidget = styled.div``;
+  const P1 = styled.p`
+    color: var(--color-heading);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  `;
+
+  const P2 = styled.p`
+    color: var(--color-subheading);
+  `;
+
   return (
-    <Card>
-      <div className="weather-container">
-        <WeatherIcon src={icon()} alt="weather-icon" />
-        <div>
-          <p className="weather-description">
-            {weatherDescription} in {location}
-          </p>
-          <p className="weather-temperature">{temperature}°C</p>
-        </div>
+    <WeatherWidget>
+      <div>
+        <P1>
+          <WeatherIcon src={icon()} alt="weather-icon" />
+          {temperature}°C
+        </P1>
+        <P2>{weatherDescription}</P2>
       </div>
-    </Card>
+    </WeatherWidget>
   );
 }

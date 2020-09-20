@@ -50,7 +50,7 @@ select {
 }
 
 :root {
-  --color-background: hsl(232, 67%, 96%);
+  --color-background: hsl(60, 10%, 96%);
   --color-heading: hsl(232, 33%, 4%);
   --color-subheading: hsla(232, 33%, 4%, 0.5);
   --color-border-hover: hsl(222, 50%, 80%);
