@@ -80,13 +80,13 @@ export default function Weather() {
   const WeatherWidget = styled.div``;
   const P1 = styled.p`
     color: var(--color-heading);
-    font-weight: 700;
     display: flex;
     align-items: center;
   `;
 
   const P2 = styled.p`
     color: var(--color-subheading);
+    text-align: right;
   `;
 
   return (

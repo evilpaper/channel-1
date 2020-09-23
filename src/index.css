@@ -8,14 +8,6 @@
   outline: none;
 }
 
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  font-size: 16px;
-}
-
 body,
 h1,
 h2,
@@ -65,7 +57,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-background);
-  padding: 3em;
 }
 
 img {
