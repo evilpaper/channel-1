@@ -82,11 +82,14 @@ export default function Weather() {
     color: var(--color-heading);
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    font-size: 0.9em;
   `;
 
   const P2 = styled.p`
     color: var(--color-subheading);
     text-align: right;
+    font-size: 0.9em;
   `;
 
   return (

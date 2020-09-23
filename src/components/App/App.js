@@ -13,10 +13,13 @@ function App() {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 1px 0 0 hsla(232, 33%, 4%, 0.2);
   `;
 
   const Logo = styled.div`
     width: 1.6em;
+    display: flex;
+    align-item: center;
   `;
 
   return (

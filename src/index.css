@@ -43,8 +43,8 @@ select {
 
 :root {
   --color-background: hsl(60, 10%, 96%);
-  --color-heading: hsl(232, 33%, 4%);
-  --color-subheading: hsla(232, 33%, 4%, 0.5);
+  --color-heading: hsl(232, 33%, 3%);
+  --color-subheading: hsla(232, 33%, 4%, 0.7);
   --color-border-hover: hsl(222, 50%, 80%);
   --color-placeholder: hsl(227, 56%, 60%);
 }

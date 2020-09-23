@@ -47,11 +47,13 @@ export default function Clock() {
   const P1 = styled.p`
     color: var(--color-heading);
     text-align: center;
+    font-size: 0.9em;
   `;
 
   const P2 = styled.p`
     color: var(--color-subheading);
     text-align: center;
+    font-size: 0.9em;
   `;
 
   return (
