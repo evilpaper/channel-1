@@ -8,15 +8,3 @@
 @import "../SickLeave/styles.css";
 @import "../StatsOne/styles.css";
 @import "../List/styles.css";
-
-.grid {
-  display: flex;
-  gap: 2em;
-}
-
-.grid-column {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  width: 24%;
-}

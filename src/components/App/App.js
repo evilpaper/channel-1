@@ -5,6 +5,7 @@ import "./App.css";
 
 import Clock from "../Clock/Clock.js";
 import Weather from "../Weather/Weather.js";
+import DailyInfo from "../DailyInfo/DailyInfo.js";
 
 function App() {
   const Header = styled.header`
@@ -22,6 +23,10 @@ function App() {
     align-item: center;
   `;
 
+  const Container = styled.div`
+    padding: 2em;
+  `;
+
   return (
     <>
       <Header>
@@ -31,6 +36,9 @@ function App() {
         <Clock />
         <Weather />
       </Header>
+      <Container>
+        <DailyInfo />
+      </Container>
     </>
   );
 }
