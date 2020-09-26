@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import Card from "../Card/Card.js";
 import Heading from "../Heading/Heading.js";
 import InputField from "../InputField/InputField.js";
@@ -11,6 +12,7 @@ export default function DailyInfo() {
   const handleChange = (e) => {
     setInput(e.target.value);
   };
+
   const handleSubmit = (e) => {
     if (e.keyCode === 13) {
       const newItems = [...items];
@@ -26,9 +28,18 @@ export default function DailyInfo() {
     setItems(newItems);
   };
 
+  const CardContainer = styled.div`
+    height: 10em;
+    width: 16em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  `;
+
   return (
     <Card>
-      <div className="daily-info-container">
+      <CardContainer>
         <div>
           <Heading title="Todays information"></Heading>
           <List items={items} handleDelete={handleDelete} />
@@ -39,7 +50,7 @@ export default function DailyInfo() {
           value={input}
           placeholder=" + add information..."
         />
-      </div>
+      </CardContainer>
     </Card>
   );
 }

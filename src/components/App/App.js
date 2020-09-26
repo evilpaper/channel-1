@@ -24,7 +24,7 @@ function App() {
   `;
 
   const Container = styled.div`
-    padding: 2em;
+    padding: 1.4em;
   `;
 
   return (
