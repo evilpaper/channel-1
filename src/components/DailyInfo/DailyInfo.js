@@ -5,6 +5,15 @@ import Heading from "../Heading/Heading.js";
 import InputField from "../InputField/InputField.js";
 import List from "../List/List.js";
 
+const CardContainer = styled.div`
+  height: 10em;
+  width: 16em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+`;
+
 export default function DailyInfo() {
   const [input, setInput] = useState("");
   const [items, setItems] = useState([]);
@@ -27,15 +36,6 @@ export default function DailyInfo() {
     const newItems = items.filter((item) => item !== itemToDelete);
     setItems(newItems);
   };
-
-  const CardContainer = styled.div`
-    height: 10em;
-    width: 16em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-  `;
 
   return (
     <Card>

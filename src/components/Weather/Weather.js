@@ -13,6 +13,22 @@ import Sun from "../../images/sun.svg";
 
 import WeatherIcon from "../WeatherIcon/WeatherIcon.js";
 
+const WeatherWidget = styled.div``;
+
+const P1 = styled.p`
+  color: var(--color-heading);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.9em;
+`;
+
+const P2 = styled.p`
+  color: var(--color-subheading);
+  text-align: right;
+  font-size: 0.9em;
+`;
+
 export default function Weather() {
   const [weatherDescription, setWeatherDescription] = useState("");
   const [weatherIcon, setweatherIcon] = useState("");
@@ -76,21 +92,6 @@ export default function Weather() {
         return null;
     }
   };
-
-  const WeatherWidget = styled.div``;
-  const P1 = styled.p`
-    color: var(--color-heading);
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 0.9em;
-  `;
-
-  const P2 = styled.p`
-    color: var(--color-subheading);
-    text-align: right;
-    font-size: 0.9em;
-  `;
 
   return (
     <WeatherWidget>

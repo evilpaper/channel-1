@@ -7,26 +7,26 @@ import Clock from "../Clock/Clock.js";
 import Weather from "../Weather/Weather.js";
 import DailyInfo from "../DailyInfo/DailyInfo.js";
 
+const Header = styled.header`
+  background-color: white;
+  padding: 0.8em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 0 0 hsla(232, 33%, 4%, 0.2);
+`;
+
+const Logo = styled.div`
+  width: 1.6em;
+  display: flex;
+  align-item: center;
+`;
+
+const Container = styled.div`
+  padding: 1.4em;
+`;
+
 function App() {
-  const Header = styled.header`
-    background-color: white;
-    padding: 0.8em;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 1px 0 0 hsla(232, 33%, 4%, 0.2);
-  `;
-
-  const Logo = styled.div`
-    width: 1.6em;
-    display: flex;
-    align-item: center;
-  `;
-
-  const Container = styled.div`
-    padding: 1.4em;
-  `;
-
   return (
     <>
       <Header>
