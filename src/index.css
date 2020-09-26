@@ -34,7 +34,10 @@ img {
   display: block;
 }
 
-input,
+/*
+Removes input from the part below to be able to set custom font-size.
+*/
+
 button,
 textarea,
 select {
@@ -44,9 +47,10 @@ select {
 :root {
   --color-background: hsl(60, 10%, 92%);
   --color-heading: hsl(232, 33%, 3%);
-  --color-subheading: hsla(232, 40%, 20%, 1);
+  --color-subheading: hsla(232, 33%, 20%, 0.8);
   --color-border-hover: hsl(222, 50%, 80%);
   --color-placeholder: hsl(227, 56%, 60%);
+  --color-light-gray: hsla(232, 24%, 80%, 0.9);
 }
 
 body {

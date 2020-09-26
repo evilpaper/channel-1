@@ -7,7 +7,7 @@
   float: right;
   border: none;
   background-color: transparent;
-  color: coral;
+  color: var(--color-light-gray);
 }
 
 .list-item-delete-button-icon {
