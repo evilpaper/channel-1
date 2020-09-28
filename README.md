@@ -4,8 +4,21 @@
 
 Channel-1 is a collections of useful widgets for running a larger food retail store according to lean principles.
 
-## Built with
-React and Styled Components
+## Getting started
+
+1. Clone the respository to a directory of your choice `git clone src`
+2. Run run: `npm install` to install all the relevant dependencies
+3. Start the frontend server by running: `npm run start` and visit `localhost:3000` in your browser.
+
+## Workflow
+
+- When working on a new feature or a bug fix, create a branch from the latest version of the `master`-branch.
+- If you are working on a new feature, name the branch in the format: `feature/[actual-new-feature]`, so for example: `feature/weather-widget`. A bug fix should be named in the format: `bug/[what-has-been-fixed]`.
+- When you've commited and pushed your new branch, create a new pull request where the target to merge into should be the `develop` branch. Assign a suitable reviewer.
+
+## Styleguide
+
+This repository is using Eslint to make sure that the code is correctly formatted and maintaining a certain hygene level. We are currently using [AirBnbs JavaScript Styleguide](https://github.com/airbnb/javascript). The linter will automatically run whenever you commit to the repository, if it detects certain errors or improvable code — it will stop the commit and let you make adjustments so that you can then re-commit.
 
 ## Building
 
