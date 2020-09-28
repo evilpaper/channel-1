@@ -6,7 +6,7 @@ Channel-1 is a collections of useful widgets for running a larger food retail st
 
 ## Getting started
 
-1. Clone the respository to a directory of your choice `git clone src`
+1. Clone the respository to a directory of your choice `git clone https://github.com/evilpaper/channel-1.git`
 2. Run run: `npm install` to install all the relevant dependencies
 3. Start the frontend server by running: `npm run start` and visit `localhost:3000` in your browser.
 
