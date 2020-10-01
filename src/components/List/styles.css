@@ -1,3 +1,7 @@
+.list {
+  overflow: scroll;
+}
+
 .list-item {
   display: flex;
   justify-content: space-between;

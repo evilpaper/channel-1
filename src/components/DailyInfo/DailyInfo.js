@@ -10,8 +10,25 @@ const CardContainer = styled.div`
   width: 16em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: relative;
+`;
+
+const ListContainer = styled.div`
+  overflow: scroll;
+  overflow-y: scroll;
+  min-height: 66%;
+  max-height: 66%;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  &::-webkit-scrollbar:vertical {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color: hsla(232, 33%, 3%, 0.4);
+  }
 `;
 
 export default function DailyInfo() {
@@ -40,10 +57,10 @@ export default function DailyInfo() {
   return (
     <Card>
       <CardContainer>
-        <div>
-          <Heading title="Todays information"></Heading>
+        <Heading title="Todays information"></Heading>
+        <ListContainer>
           <List items={items} handleDelete={handleDelete} />
-        </div>
+        </ListContainer>
         <InputField
           handleChange={handleChange}
           handleSubmit={handleSubmit}
