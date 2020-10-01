@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo of the project](./src/images/logo.svg)
 
-## Available Scripts
+# Channel-1 &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 
-In the project directory, you can run:
+Channel-1 is a collections of useful widgets for running a larger food retail store according to lean principles.
 
-### `yarn start`
+## Getting started
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Clone the respository to a directory of your choice `git clone https://github.com/evilpaper/channel-1.git`
+2. Run run: `npm install` to install all the relevant dependencies
+3. Start the frontend server by running: `npm run start` and visit `localhost:3000` in your browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Workflow
 
-### `yarn test`
+- When working on a new feature or a bug fix, create a branch from the latest version of the `master`-branch.
+- If you are working on a new feature, name the branch in the format: `feature/[actual-new-feature]`, so for example: `feature/weather-widget`. A bug fix should be named in the format: `bug/[what-has-been-fixed]`.
+- When you've commited and pushed your new branch, create a new pull request where the target to merge into should be the `develop` branch. Assign a suitable reviewer.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Styleguide
 
-### `yarn build`
+This repository is using Eslint to make sure that the code is correctly formatted and maintaining a certain hygene level. We are currently using [AirBnbs JavaScript Styleguide](https://github.com/airbnb/javascript). The linter will automatically run whenever you commit to the repository, if it detects certain errors or improvable code — it will stop the commit and let you make adjustments so that you can then re-commit.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+To retrieve or manipulate data in the backend, GraphQL is the chosen technology. When writing a new query for GraphQL, these should be placed in a `queries` folder co-located with the component or view that is using the query (see the home route/view for an example). The file should only contain a single query/mutation and be named in the same way as the query/mutation, e.g. `GetJobs`. REST is only used for login/authorization purposes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Styles / CSS
 
-### `yarn eject`
+Styling of components and views is done by using [Styled Components](https://styled-components.com/).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Building
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```shell
+# Install packages
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Build it
+npm run build
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Database
+Only local storage for now.
 
-## Learn More
+## Contributions
+Contributions are welcome.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Licensing
+Channel-1 is licensed under the MIT license.
