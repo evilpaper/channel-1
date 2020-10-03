@@ -9,17 +9,22 @@ const StyledList = styled.ul`
 const StyledListItem = styled.li`
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
 `;
 
 const StyledListItemDeleteButton = styled.button`
-  float: right;
   border: none;
   background-color: transparent;
   color: var(--color-light-gray);
 `;
 
 const StyledIconContainer = styled.div`
-  width: 1.2em;
+  width: 1em;
+  padding-right: 1.2em;
+  &:hover {
+    color: var(--color-danger);
+  }
 `;
 
 export default function List({ items, handleDelete }) {
@@ -34,7 +39,7 @@ export default function List({ items, handleDelete }) {
               onClick={() => handleDelete(index)}
             >
               <StyledIconContainer>
-                <XCircle className="list-item-delete-button-icon" />
+                <XCircle />
               </StyledIconContainer>
             </StyledListItemDeleteButton>
           </StyledListItem>

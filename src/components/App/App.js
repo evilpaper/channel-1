@@ -17,7 +17,7 @@ const Header = styled.header`
 `;
 
 const Logo = styled.div`
-  width: 1.6em;
+  width: 1.8em;
   display: flex;
   align-item: center;
 `;
@@ -36,6 +36,12 @@ function App() {
         <Clock />
         <Weather />
       </Header>
+      <Container>
+        <DailyInfo />
+      </Container>
+      <Container>
+        <DailyInfo />
+      </Container>
       <Container>
         <DailyInfo />
       </Container>

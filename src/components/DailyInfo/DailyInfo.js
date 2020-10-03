@@ -22,7 +22,7 @@ const ListContainer = styled.div`
     -webkit-appearance: none;
   }
   &::-webkit-scrollbar:vertical {
-    width: 10px;
+    width: 8px;
   }
   &::-webkit-scrollbar-thumb {
     border-radius: 8px;
@@ -57,7 +57,7 @@ export default function DailyInfo() {
   return (
     <Card>
       <CardContainer>
-        <Heading title="Todays information"></Heading>
+        <Heading title="Dagens info"></Heading>
         <ListContainer>
           <List items={items} handleDelete={handleDelete} />
         </ListContainer>
@@ -65,7 +65,7 @@ export default function DailyInfo() {
           handleChange={handleChange}
           handleSubmit={handleSubmit}
           value={input}
-          placeholder=" + add information..."
+          placeholder="+ Lägg till..."
         />
       </CardContainer>
     </Card>

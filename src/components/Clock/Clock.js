@@ -4,7 +4,6 @@ import styled from "styled-components";
 const P1 = styled.p`
   color: var(--color-heading);
   text-align: center;
-  font-size: 0.9em;
 `;
 
 const P2 = styled.p`
@@ -26,26 +25,26 @@ export default function Clock() {
   }, [time]);
 
   const days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
+    "Söndag",
+    "Måndag",
+    "Tisdag",
+    "Onsdag",
+    "Torsdag",
+    "Fredag",
+    "Lördag",
   ];
 
   const months = [
-    "January",
-    "February",
-    "March",
+    "Januari",
+    "Februari",
+    "Mars",
     "April",
-    "May",
-    "June",
-    "July",
-    "August",
+    "Maj",
+    "Juni",
+    "Juli",
+    "Augusti",
     "September",
-    "October",
+    "Oktober",
     "November",
     "December",
   ];

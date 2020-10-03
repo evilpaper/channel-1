@@ -20,7 +20,6 @@ const P1 = styled.p`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-size: 0.9em;
 `;
 
 const P2 = styled.p`
