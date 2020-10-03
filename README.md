@@ -2,7 +2,7 @@
 
 # Channel-1 &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 
-Channel-1 is a collections of useful widgets for running a larger food retail store according to lean principles.
+Channel-1 is a collections of useful widgets for running larger food retail stores utlizing lean principles.
 
 ## Getting started
 
