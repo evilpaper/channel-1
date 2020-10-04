@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Card from "../Card/Card.js";
 import Heading from "../Heading/Heading.js";
@@ -31,9 +31,24 @@ const ListContainer = styled.div`
   }
 `;
 
+const LOCAL_STORAGE_KEY = "channelOne.dailyInfo";
+
 export default function DailyInfo() {
   const [input, setInput] = useState("");
   const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const dailyInfoJSON = localStorage.getItem(LOCAL_STORAGE_KEY);
+    if (dailyInfoJSON !== null) {
+      setItems(JSON.parse(dailyInfoJSON));
+    } else {
+      setItems([]);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(items));
+  }, [items]);
 
   const handleChange = (e) => {
     setInput(e.target.value);

@@ -6,6 +6,7 @@ import "./App.css";
 import Clock from "../Clock/Clock.js";
 import Weather from "../Weather/Weather.js";
 import DailyInfo from "../DailyInfo/DailyInfo.js";
+// import DailyBest from "../DailyBest/DailyBest.js";
 
 const Header = styled.header`
   background-color: white;
@@ -24,6 +25,7 @@ const Logo = styled.div`
 
 const Container = styled.div`
   padding: 1.4em;
+  display: flex;
 `;
 
 function App() {
@@ -36,12 +38,6 @@ function App() {
         <Clock />
         <Weather />
       </Header>
-      <Container>
-        <DailyInfo />
-      </Container>
-      <Container>
-        <DailyInfo />
-      </Container>
       <Container>
         <DailyInfo />
       </Container>
