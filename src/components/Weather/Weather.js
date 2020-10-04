@@ -22,14 +22,14 @@ const P1 = styled.p`
   justify-content: flex-end;
 `;
 
-const P2 = styled.p`
-  color: var(--color-subheading);
-  text-align: right;
-  font-size: 0.9em;
-`;
+// const P2 = styled.p`
+//   color: var(--color-subheading);
+//   text-align: right;
+//   font-size: 0.9em;
+// `;
 
 export default function Weather() {
-  const [weatherDescription, setWeatherDescription] = useState("");
+  // const [weatherDescription, setWeatherDescription] = useState("");
   const [weatherIcon, setweatherIcon] = useState("");
   const [temperature, setTemperature] = useState("");
 
@@ -39,10 +39,10 @@ export default function Weather() {
     )
       .then((response) => response.json())
       .then((data) => {
-        setWeatherDescription(
-          data.weather[0].description.substr(0, 1).toUpperCase() +
-            data.weather[0].description.substr(1)
-        );
+        // setWeatherDescription(
+        //   data.weather[0].description.substr(0, 1).toUpperCase() +
+        //     data.weather[0].description.substr(1)
+        // );
         setweatherIcon(data.weather[0].icon);
         setTemperature(Math.round(data.main.temp));
       });
@@ -99,7 +99,7 @@ export default function Weather() {
           <WeatherIcon src={icon()} alt="weather-icon" />
           {temperature}°C
         </P1>
-        <P2>{weatherDescription}</P2>
+        {/* <P2>{weatherDescription}</P2> */}
       </div>
     </WeatherWidget>
   );
