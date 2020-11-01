@@ -33,10 +33,10 @@ export default function Weather() {
   const [weatherIcon, setweatherIcon] = useState("");
   const [temperature, setTemperature] = useState("");
 
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=Stockholm&APPID=${process.env.REACT_APP_WEATHERKEY}&units=metric`
+
   useEffect(() => {
-    fetch(
-      "https://api.openweathermap.org/data/2.5/weather?q=Stockholm&APPID=10f491bfcbd56b60a7ed7024cf6c2a88&units=metric"
-    )
+    fetch(url)
       .then((response) => response.json())
       .then((data) => {
         // setWeatherDescription(
@@ -46,7 +46,7 @@ export default function Weather() {
         setweatherIcon(data.weather[0].icon);
         setTemperature(Math.round(data.main.temp));
       });
-  }, []);
+  }, [url]);
 
   const icon = () => {
     switch (weatherIcon) {
